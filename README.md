@@ -9,7 +9,7 @@ Fork de [Hark](https://github.com/konradk/hark) que añade **proveedores
 OpenAI-compatibles con base URL personalizable**, configurables desde el
 panel de ajustes, `config.lua` y la CLI.
 
-Construido desde `xmmanuellx/hark@80accfd`. El PR original está en
+Construido desde `xmmanuellx/hark@012073a`. El PR original está en
 https://github.com/konradk/hark/pull/1.
 
 ```bash
@@ -23,10 +23,11 @@ Actualiza con `omarchy plugin update hark`.
 
 - Sección **Providers** en los ajustes (`Ctrl+,`): añade/edita/elimina
   endpoints OpenAI-compatibles (name, base URL y API key).
-- **Varios modelos por proveedor**: escribe el id del modelo y pulsa
-  **Add model**; cada modelo usa su id como nombre (no hay que nombrarlo).
+- **Varios modelos por proveedor**: en el mismo formulario escribes los id de
+  los modelos (cada uno se vuelve una etiqueta con "×" para quitarlo). El
+  nombre del modelo es su id, no hay que nombrarlo.
 - Tabla `providers` en `~/.config/hark/config.lua`.
-- Comandos `harkctl provider list/add/remove` y `harkctl model add/remove`.
+- Comandos `harkctl provider list/save/remove`.
 - Los binarios estáticos `harkd`/`harkctl` ya están incluidos (no hace falta Go).
 
 ## License
